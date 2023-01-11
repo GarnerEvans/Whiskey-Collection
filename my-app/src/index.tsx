@@ -14,8 +14,8 @@ const myTitle = "Whiskey Inventory"
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <FirebaseAppProvider firebaseConfig={firebaseConfig} suspense={true}>
-    <Provider store={store}> */}
+    {/* <FirebaseAppProvider firebaseConfig={firebaseConfig} suspense={true}> */}
+    <Provider store={store}>
     <Router>
       <Switch>
 
@@ -37,8 +37,8 @@ ReactDOM.render(
 
       </Switch>
     </Router>
-    {/* </Provider>
-  </FirebaseAppProvider>  */}
+    </Provider>
+  {/* </FirebaseAppProvider>  */}
   </React.StrictMode>,
   document.getElementById('root')
 );
