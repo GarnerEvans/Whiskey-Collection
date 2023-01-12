@@ -29,8 +29,7 @@
     "reactfire": "^3.0.0",
     "tslib": "^2.4.1",
     "typescript": "^4.4.4",
-    "web-vitals": "^1.1.2",
-    "homepage": "."
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

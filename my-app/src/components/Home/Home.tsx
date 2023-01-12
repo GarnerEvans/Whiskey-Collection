@@ -10,9 +10,9 @@ interface Props{
 
 const useStyles = makeStyles({
     background: {
-        backgroundImage: `linear-gradient(rgba(0,49,85) 0%, rgba(121,147,163,1) 47%, rgba(249,249,249,1) 100%)`,
+        backgroundImage: `linear-gradient(rgba(233,198,23) 0%, rgba(184,173,115,1) 47%, rgba(169,147,19,1) 100%)`,
         width: '100%',
-        height: '90%',
+        height: '100%',
         backgroundPosition: 'center',
         position: 'absolute',
         zIndex: -1,
@@ -20,13 +20,11 @@ const useStyles = makeStyles({
     main_text: {
         textAligin: 'center',
         position: 'relative',
-        top: '40%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        color: 'white',
+        transform: 'translate(50%, -50%)',
+        color: 'Black',
     },
     button_text: {
-        color: 'white',
+        color: 'black',
         textDecoration: 'none',
         textAlign: 'center'
     },
@@ -43,7 +41,7 @@ export const Home = ( props:Props ) => {
             <div className={classes.main_text}>
                     <h1>{ props.title }</h1>
                     <Button>
-                        <Link to='/inventory' className={classes.button_text} > Take me to my Inventory </Link>
+                        <Link to='/inventory' className={classes.button_text} > To the whiskeys </Link>
                     </Button>
             </div>
         </div>
