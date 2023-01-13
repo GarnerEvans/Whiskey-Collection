@@ -46,7 +46,7 @@ const useStyles = makeStyles({
     },
     snackBar: {
         color: 'white',
-        backgroundColor: '#4caf50'
+        backgroundColor: 'linear-gradient(90deg, rgba(159,159,163,1) 15%, rgba(90,90,102,1) 55%, rgba(36,37,37,1) 100%)'
     }
 
 });

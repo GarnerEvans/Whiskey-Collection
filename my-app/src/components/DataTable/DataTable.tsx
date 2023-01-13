@@ -14,7 +14,7 @@ const columns: GridColDef[] = [
     { field: 'distiller', headerName: 'Whiskey Distiller', flex: 1 },
     { field: 'variety', headerName: 'Whiskey Variety', flex: 1 },
     { field: 'year', headerName: 'Whiskey Year', flex: 1 },
-    { field: 'tasting notes', headerName: 'Tasting Notes', flex: 2 },
+    { field: 'tasting_notes', headerName: 'Tasting Notes', flex: 2 },
 ];
 
 interface gridData {

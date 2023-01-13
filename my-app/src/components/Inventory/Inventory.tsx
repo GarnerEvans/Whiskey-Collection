@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     main: {
         display: 'flex',
         flexDirection: 'column',
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`,
+        backgroundImage: `linear-gradient(90deg, rgba(159,159,163,1) 15%, rgba(90,90,102,1) 55%, rgba(36,37,37,1) 100%)`,
         width: '100%',
         height: '100%',
         position: 'absolute',

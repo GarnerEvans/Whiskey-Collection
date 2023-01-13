@@ -10,7 +10,7 @@ interface Props{
 
 const useStyles = makeStyles({
     background: {
-        backgroundImage: `linear-gradient(rgba(233,198,23) 0%, rgba(184,173,115,1) 47%, rgba(169,147,19,1) 100%)`,
+        backgroundImage: `linear-gradient(90deg, rgba(159,159,163,1) 15%, rgba(90,90,102,1) 55%, rgba(36,37,37,1) 100%)`,
         width: '100%',
         height: '100%',
         backgroundPosition: 'center',
@@ -20,12 +20,12 @@ const useStyles = makeStyles({
     main_text: {
         textAligin: 'center',
         position: 'relative',
-        transform: 'translate(50%, -50%)',
+        transform: 'translate(50%, 50%)',
         color: 'Black',
     },
     button_text: {
         color: 'black',
-        textDecoration: 'none',
+        textDecoration: 'underline',
         textAlign: 'center'
     },
 });

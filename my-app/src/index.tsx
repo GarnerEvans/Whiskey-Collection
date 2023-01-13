@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { FirebaseAppProvider, AuthCheck } from 'reactfire';
 import { Home, Whiskey, About, Inventory, SignIn } from './components'
 import './styles.css'
-// import { firebaseConfig } from './firebaseConfig'
+import { firebaseConfig } from './firebaseConfig'
 import 'firebase/auth';
 import { Provider } from 'react-redux';
 import { store } from './redux/store'
@@ -14,7 +14,7 @@ const myTitle = "Whiskey Inventory"
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <FirebaseAppProvider firebaseConfig={firebaseConfig} suspense={true}> */}
+    <FirebaseAppProvider firebaseConfig={firebaseConfig} suspense={true}>
     <Provider store={store}>
     <Router>
       <Switch>
@@ -38,7 +38,7 @@ ReactDOM.render(
       </Switch>
     </Router>
     </Provider>
-  {/* </FirebaseAppProvider>  */}
+  </FirebaseAppProvider> 
   </React.StrictMode>,
   document.getElementById('root')
 );
