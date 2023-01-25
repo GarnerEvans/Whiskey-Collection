@@ -6,13 +6,13 @@ const rootSlice = createSlice({
         distiller: 'Distiller',
         variety: 'Variety',
         year: 'Year',
-        tastingNotes: 'Color',
+        tasting_notes: 'tasting_notes',
     },
     reducers: {
         chooseDistiller: (state, action) => { state.distiller = action.payload},
         chooseVariety: (state, action) => { state.variety = action.payload },
         chooseYear: (state, action) => { state.year = action.payload },
-        chooseTastingNotes: (state, action) => { state.tastingNotes = action.payload }
+        chooseTastingNotes: (state, action) => { state.tasting_notes = action.payload }
 
     }
 })

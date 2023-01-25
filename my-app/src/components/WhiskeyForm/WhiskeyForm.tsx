@@ -17,7 +17,7 @@ interface WhiskeyState{
     distiller: string;
     variety: string;
     year: string;
-    tastingNotes: string;
+    tasting_notes: string;
 }
 
 export const WhiskeyForm = (props:WhiskeyFormProps) => {
@@ -30,16 +30,24 @@ export const WhiskeyForm = (props:WhiskeyFormProps) => {
     const onSubmit = (data:any, event:any) => {
         console.log(props.id)
         if(props.id!){
+            console.log(data.distiller)
+            console.log(data.variety)
+            console.log(data.year)
+            console.log(data.tasting_notes)
             server_calls.update(props.id!, data);
             console.log(`Updated:${data} ${props.id}`);
             console.log(data);
             setTimeout( () => {window.location.reload()}, 1000);
             event.target.reset();
         } else {
+            console.log(data.distiller)
+            console.log(data.variety)
+            console.log(data.year)
+            console.log(data.tasting_notes)
             dispatch(chooseDistiller(data.distiller));
             dispatch(chooseVariety(data.variety));
             dispatch(chooseYear(data.year));
-            dispatch(chooseTastingNotes(data.TaschooseTastingNotes));
+            dispatch(chooseTastingNotes(data.tasting_notes));
             server_calls.create(store.getState());
             setTimeout( () => {window.location.reload()}, 1000)
         }
@@ -49,20 +57,20 @@ export const WhiskeyForm = (props:WhiskeyFormProps) => {
         <div>
             <form onSubmit = {handleSubmit(onSubmit)}>
                 <div>
-                    <label htmlFor="make">Whiskey Distiller</label>
-                    <Input {...register('make')} name="make" placeholder='distiller'/>
+                    <label htmlFor="Distiller">Whiskey Distiller</label>
+                    <Input {...register('distiller')} name="distiller" placeholder='distiller'/>
                 </div>
                 <div>
-                    <label htmlFor="variety">variety</label>
+                    <label htmlFor="Variety">variety</label>
                     <Input {...register('variety')} name="variety" placeholder='variety'/>
                 </div>
                 <div>
                     <label htmlFor="Year">Year</label>
-                    <Input {...register('year')} name="Year" placeholder='year'/>
+                    <Input {...register('year')} name="year" placeholder='year'/>
                 </div>
                 <div>
-                    <label htmlFor="tastingNotes">Tasting Notes</label>
-                    <Input {...register('Tasting Notes')} name="Tasting Notes" placeholder='tasting notes'/>
+                    <label htmlFor="tasting_notes">Tasting Notes</label>
+                    <Input {...register('tasting_notes')} name="tasting_notes" placeholder='tasting notes'/>
                 </div>
                 <Button type='submit'>Submit</Button>
             </form>

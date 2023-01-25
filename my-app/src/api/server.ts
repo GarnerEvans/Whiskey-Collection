@@ -39,7 +39,7 @@ update: async (id:string, data:any = {}) => {
     const response = await fetch(`https://sharp-emerald-bell.glitch.me/api/whiskeys/${id}`, { 
         method: 'POST',
         headers: {
-            'Content-Type': 'appllication/json',
+            'Content-Type': 'application/json',
             'x-access-token': `Bearer ${token}`
         },
         body: JSON.stringify(data)
